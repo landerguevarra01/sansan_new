@@ -12,19 +12,19 @@ function Featured() {
   ];
 
   return (
-    <div className="text-[80px]">
-      <div>
+    <div className="text-responsiveBanner">
+      <div className="font-bold">
         FEATURED <span className="text-[#DB0102]">WORKS</span>
       </div>
-      <div>
+      <div className="text-responsiveParagraph">
         Let's make your brand the star of the show. Check out my works to see
         the fun unfold, and let's create something spectacular together!
       </div>
       {works.map((work) => (
-        <div key={work.id}>
+        <div key={work.id} className="flex flex-row gap-12">
           <div>{work.id}</div>
-          <div>{work.title}</div>
-          <div>
+          <div className="font-bold">{work.title}</div>
+          <div className="absolute right-0 mr-20">
             <svg
               width="42"
               height="42"

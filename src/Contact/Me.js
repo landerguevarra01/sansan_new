@@ -3,15 +3,34 @@ import React from "react";
 function Me() {
   return (
     <>
-      <div>
+      <div className="text-responsiveBanner font-bold flex justify-between">
         <div>
           LET'S MAKE THIS
           <br />
           MONOCHROMATIC WORLD
-          <br />a <span>colorful one.</span>
+          <br />
+          <span className="font-normal">
+            a <span className="text-[#DB0102]">colorful one.</span>
+          </span>
         </div>
-        <div>
-          <button>Contact</button>
+        <div className="text-responsiveParagraph2 flex flex-col justify-center items-center">
+          <button className="flex flex-row justify-center items-center text-responsiveParagraph2 w-fit border-solid border-[2px] rounded-full mt-20">
+            Contact
+            <svg
+              width="25"
+              height="25"
+              viewBox="0 0 25 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3 22L23 2M23 2H3M23 2V22"
+                stroke="#F5F5F5"
+                stroke-width="3"
+                stroke-linecap="square"
+              />
+            </svg>
+          </button>
         </div>
       </div>
     </>

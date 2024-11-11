@@ -8,18 +8,20 @@ import Footer from "./Footer/Footer";
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Hero />} />
-      </Routes>
-      <div className="flex flex-col gap-8">
-        <Menu />
-        <Featured />
-        <Remarks />
-        <Me />
-        <Footer />
-      </div>
-    </Router>
+    <div className="flex flex-col justify-center items-center">
+      <Router>
+        <Routes>
+          <Route path="/" element={<Hero />} />
+        </Routes>
+        <div className="flex flex-col gap-8 w-full max-w-[1207px]">
+          <Menu />
+          <Featured />
+          <Remarks />
+          <Me />
+          <Footer />
+        </div>
+      </Router>
+    </div>
   );
 }
 
