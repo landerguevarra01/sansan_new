@@ -8,8 +8,8 @@ function Hero() {
           <img src={JaysonIcon} alt="Jayson Icon" className="" />
         </div>
         <div>HEY THERE! I’M SANSAN, A</div>
-        <div>
-          <button className="w-fit flex flex-row justify-center items-center border-[#DB0102] border-solid bg-[#DB0102] rounded-full">
+        <div className="flex flex-col justify-center items-center">
+          <button className="w-fit flex justify-center items-center border-[#DB0102] border-solid bg-[#DB0102] rounded-full">
             GRAPHIC DESIGNER
             <div className="-mt-8">
               <svg
