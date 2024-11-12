@@ -8,7 +8,7 @@ function Menu() {
     });
   };
   return (
-    <header className="flex justify-between items-center text-responsiveNav w-[1728px]">
+    <header className="flex justify-between items-center text-responsiveNav w-full">
       <div className="flex items-center">
         <img
           src={SANSANICON}
