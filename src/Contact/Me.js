@@ -3,18 +3,28 @@ import React from "react";
 function Me() {
   return (
     <>
-      <div className="text-responsiveBanner font-bold flex justify-between">
+      <div
+        className="text-responsiveBanner flex justify-between w-[1207px]"
+        style={{ fontFamily: "Anton, sans-serif" }}
+      >
         <div>
           LET'S MAKE THIS
           <br />
           MONOCHROMATIC WORLD
           <br />
-          <span className="font-normal">
+          <span
+            className="font-normal"
+            style={{
+              fontFamily: "Roxborough CF",
+              fontWeight: "bold",
+              fontStyle: "italic",
+            }}
+          >
             a <span className="text-[#DB0102]">colorful one.</span>
           </span>
         </div>
         <div className="text-responsiveParagraph2 flex flex-col justify-center items-center">
-          <button className="flex flex-row justify-center items-center text-responsiveParagraph2 w-fit border-solid border-[2px] rounded-full mt-20">
+          <button className="flex flex-row justify-center items-center text-responsiveParagraph2 w-fit border-solid border-[2px] rounded-full mt-20 px-8 py-2 gap-4 hover:bg-[#DB0102] hover:border-[#DB0102]">
             Contact
             <svg
               width="25"

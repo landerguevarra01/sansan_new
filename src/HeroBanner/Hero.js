@@ -1,11 +1,24 @@
-import JaysonIcon from "../Assets/jaysonicon.png";
+import React, { useState } from "react";
+import JaysonLogo from "../Assets/SANSAN_LOGO_1080.png";
+import JaysonGif from "../Assets/JAYSON_ANIMATED.gif";
+import "../App.css";
 
 function Hero() {
+  const [imageSrc, setImageSrc] = useState(JaysonLogo);
   return (
     <>
-      <div className="flex flex-col justify-center item-center text-center text-responsiveBanner font-bold mt-40 -tracking-wider">
+      <div
+        className="flex flex-col justify-center item-center text-center text-responsiveBanner mt-40"
+        style={{ fontFamily: "Anton, sans-serif" }}
+      >
         <div className="flex flex-col justify-center items-center">
-          <img src={JaysonIcon} alt="Jayson Icon" className="" />
+          <img
+            src={imageSrc}
+            onMouseEnter={() => setImageSrc(JaysonGif)}
+            onMouseLeave={() => setImageSrc(JaysonLogo)}
+            alt="Jayson Icon"
+            className=" w-[230px] h-[244.24px]"
+          />
         </div>
         <div>HEY THERE! I’M SANSAN, A</div>
         <div className="flex flex-col justify-center items-center">
@@ -29,7 +42,16 @@ function Hero() {
             </div>
           </button>
         </div>
-        <div className="">Welcome to my creative space!</div>
+        <div
+          className=""
+          style={{
+            fontFamily: "Roxborough CF",
+            fontWeight: "bold",
+            fontStyle: "italic",
+          }}
+        >
+          Welcome to my creative space!
+        </div>
         <div className="flex flex-row justify-center items-center">
           GOT A PROJECT IN MIND?
           <span>
