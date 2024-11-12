@@ -28,7 +28,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Hero />} />
         </Routes>
-        <div className="flex flex-col w-full">
+        <div className="flex flex-col w-full px-0">
           <div
             className={`flex flex-col justify-center items-center z-10 my-24 px-20 sticky top-0 pt-4 ${
               isSticky ? "bg-gradient-to-t from-transparent to-black" : ""
