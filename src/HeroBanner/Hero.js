@@ -8,7 +8,7 @@ function Hero() {
   return (
     <>
       <div
-        className="flex flex-col justify-center item-center text-center text-responsiveBanner mt-40"
+        className="flex flex-col justify-center item-center text-center text-responsiveBanner mt-8"
         style={{ fontFamily: "Anton, sans-serif" }}
       >
         <div className="flex flex-col justify-center items-center">
@@ -17,12 +17,12 @@ function Hero() {
             onMouseEnter={() => setImageSrc(JaysonGif)}
             onMouseLeave={() => setImageSrc(JaysonLogo)}
             alt="Jayson Icon"
-            className=" w-[230px] h-[244.24px]"
+            className=" w-[270px] h-auto"
           />
         </div>
         <div>HEY THERE! I’M SANSAN, A</div>
         <div className="flex flex-col justify-center items-center">
-          <button className="w-fit flex justify-center items-center gap-4 border-[#DB0102] border-solid bg-[#DB0102] text-[#1D1D1D] rounded-full px-10">
+          <button className="w-fit flex justify-center items-center gap-4 border-[#DB0102] border-solid bg-[#DB0102] text-[#1D1D1D] rounded-full px-10 hover:scale-105 transition-transform ease-in-out duration-300">
             GRAPHIC DESIGNER
             <div className="-mt-8">
               <svg
@@ -56,7 +56,7 @@ function Hero() {
           GOT A PROJECT IN MIND?
           <span>
             <div>
-              <button className="w-fit flex flex-row justify-center items-center gap-4 border-[#B0B0B0] border-solid bg-[#B0B0B0] text-[#1D1D1D] rounded-full px-10 ml-4">
+              <button className="w-fit flex flex-row justify-center items-center gap-4 border-[#B0B0B0] border-solid bg-[#B0B0B0] text-[#1D1D1D] rounded-full px-10 ml-4 hover:scale-105 transition-transform ease-in-out duration-300">
                 LET’S CHAT
                 <div className="-mt-8">
                   <svg

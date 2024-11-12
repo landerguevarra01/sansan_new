@@ -20,7 +20,7 @@ function Footer() {
       >
         <div className="flex flex-row justify-between items-center">
           <div className="text-[180px]">©2024</div>
-          <div className="flex flex-col text-responsiveNav gap-4">
+          <div className="flex flex-col text-responsiveNav gap-4 -mt-20">
             <button
               className=" border-[2px] border-solid rounded-full px-4 hover:bg-[#DB0102] hover:border-[#DB0102]"
               style={{
@@ -52,7 +52,7 @@ function Footer() {
           className="flex flex-row justify-between items-center text-responsiveNav"
           style={{
             fontFamily: "Helvetica",
-            fontWeight: "bold",
+            fontWeight: "normal",
             fontStyle: "normal",
           }}
         >
