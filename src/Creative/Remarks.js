@@ -26,7 +26,7 @@ function Remarks() {
                 fontStyle: "italic",
               }}
             >
-              MAGIC
+              Magic
             </span>
             <div
               className="text-responsiveParagraph"
