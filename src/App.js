@@ -145,7 +145,7 @@ function App() {
           {/* <div className="max-w-[1207px]">
             <div className="divider" />
           </div> */}
-          <div className="flex flex-col justify-center items-center mt-40">
+          <div className="flex flex-col justify-center items-center">
             <Footer />
           </div>
         </div>
