@@ -51,7 +51,7 @@ function Hero() {
         >
           Welcome to my creative space!
         </div>
-        <div className="flex flex-col lg:flex-row justify-center items-center">
+        <div className="flex flex-row justify-center items-center">
           GOT A PROJECT IN MIND?
           <span>
             <div>
