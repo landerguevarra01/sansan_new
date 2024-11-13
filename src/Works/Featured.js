@@ -105,7 +105,7 @@ function Featured() {
             </div>
           </div>
           {openIndex === index && (
-            <div className="accordion-content transition-all ease-in-out duration-500 mt-4 text-gray-600">
+            <div className="accordion-content transform transition-transform ease-in-out duration-500 mt-4 text-gray-600">
               {work.description}
             </div>
           )}
