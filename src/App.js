@@ -39,8 +39,14 @@ function App() {
   return (
     <div className="flex flex-col justify-center items-center">
       <div
-        className="absolute top-8 right-8 cursor-pointer"
+        className="absolute cursor-pointer"
         onClick={toggleAudio}
+        style={{
+          position: "fixed", // Make it fixed at the top
+          top: "36px", // Adjust top as needed
+          right: "18px", // Adjust right as needed
+          zIndex: 9999, // Ensure it's on top of other elements
+        }}
       >
         <svg
           id="wave"
