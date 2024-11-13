@@ -8,9 +8,12 @@ import Me from "./Contact/Me";
 import Footer from "./Footer/Footer";
 import MarqueeText from "./Creative/MarqueeText";
 import "./App.css";
+import { HiMiniSpeakerWave, HiMiniSpeakerXMark } from "react-icons/hi2";
 
 function App() {
   const [isSticky, setIsSticky] = useState(false);
+  const [isAudioPlaying, setIsAudioPlaying] = useState(false);
+  const [audio] = useState(new Audio("/POWERPUFF.mp3"));
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,11 +25,40 @@ function App() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const toggleAudio = () => {
+    if (isAudioPlaying) {
+      audio.pause();
+    } else {
+      audio.play();
+      audio.currentTime = 2.5;
+    }
+    setIsAudioPlaying(!isAudioPlaying);
+  };
+
   return (
     <div className="flex flex-col justify-center items-center">
+      <div
+        className="absolute top-8 right-12 text-responsiveParagraph cursor-pointer"
+        onClick={toggleAudio}
+      >
+        {isAudioPlaying ? (
+          <HiMiniSpeakerWave className="transition-transform duration-300 ease-in-out text-[#DB0102]" />
+        ) : (
+          <HiMiniSpeakerXMark className="transition-transform duration-300 ease-in-out" />
+        )}
+      </div>
+
       <Router>
         <Routes>
-          <Route path="/" element={<Hero />} />
+          <Route
+            path="/"
+            element={
+              <div id="home">
+                <Hero />
+              </div>
+            }
+          />
         </Routes>
         <div className="flex flex-col w-full px-0">
           <div
@@ -36,16 +68,22 @@ function App() {
           >
             <Menu />
           </div>
-          <div className="flex flex-col justify-center items-center">
+          <div
+            id="projects"
+            className="flex flex-col justify-center items-center"
+          >
             <Featured />
           </div>
           <div className="flex flex-col my-40">
             <MarqueeText />
           </div>
-          <div className="flex flex-col justify-center items-center">
+          <div id="about" className="flex flex-col justify-center items-center">
             <Remarks />
           </div>
-          <div className="flex flex-col justify-center items-center my-40">
+          <div
+            id="contact"
+            className="flex flex-col justify-center items-center my-40"
+          >
             <Me />
           </div>
           <div className="flex flex-col justify-center items-center">
