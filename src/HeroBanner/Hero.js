@@ -63,7 +63,7 @@ function Hero() {
                     height="32"
                     viewBox="0 0 42 42"
                     fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns="http://www.w3.org/2000/svg"  
                   >
                     <path
                       d="M6 36L38 4M38 4H6M38 4V36"
