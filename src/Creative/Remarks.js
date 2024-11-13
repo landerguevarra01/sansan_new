@@ -11,7 +11,7 @@ function Remarks() {
     <>
       <div className="flex flex-col gap-4">
         <div
-          className="flex flex-row gap-12 justify-center items-center text-responsiveBanner w-[1207px]"
+          className="flex flex-col lg:flex-row gap-12 justify-center items-center text-responsiveBanner max-w-[1207px]"
           style={{ fontFamily: "Anton, sans-serif" }}
         >
           <div>
@@ -72,7 +72,7 @@ function Remarks() {
             <img
               src={AboutJayson}
               alt="Meeet Jayson"
-              className="w-[1439px] h-auto"
+              className="lg:w-[1439px] h-auto"
             />
           </div>
         </div>

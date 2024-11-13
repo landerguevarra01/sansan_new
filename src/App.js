@@ -37,7 +37,7 @@ function App() {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center px-4">
       <div
         className="absolute cursor-pointer"
         onClick={toggleAudio}
@@ -116,9 +116,9 @@ function App() {
             }
           />
         </Routes>
-        <div className="flex flex-col w-full px-0">
+        <div className="flex flex-col w-full">
           <div
-            className={`flex flex-col justify-center items-center z-10 my-24 px-20 sticky top-0 pt-4 ${
+            className={`hidden lg:flex flex-col justify-center items-center z-10 my-24 px-20 sticky top-0 pt-4 ${
               isSticky ? "bg-gradient-to-t from-transparent to-black" : ""
             }`}
           >
@@ -126,7 +126,7 @@ function App() {
           </div>
           <div
             id="projects"
-            className="flex flex-col justify-center items-center"
+            className="flex flex-col justify-center items-center my-40 lg:my-0"
           >
             <Featured />
           </div>
@@ -142,9 +142,9 @@ function App() {
           >
             <Me />
           </div>
-          <div className="flex flex-col justify-center items-center">
-            <div className="divider2" />
-          </div>
+          {/* <div className="max-w-[1207px]">
+            <div className="divider" />
+          </div> */}
           <div className="flex flex-col justify-center items-center mt-40">
             <Footer />
           </div>

@@ -15,41 +15,49 @@ function Footer() {
   return (
     <>
       <div
-        className="flex flex-col text-responsiveFoot w-[1207px] mb-8"
+        className="flex flex-col text-responsiveFoot max-w-[1207px] mb-8"
         style={{ fontFamily: "Anton, sans-serif" }}
       >
-        <div className="flex flex-row justify-between items-center">
-          <div className="text-[180px]">©2024</div>
-          <div className="flex flex-col text-responsiveNav gap-4 -mt-20">
-            <button
-              className=" border-[2px] border-solid rounded-full px-4 hover:bg-[#DB0102] hover:border-[#DB0102]"
-              style={{
-                fontFamily: "Helvetica",
-                fontWeight: "bold",
-                fontStyle: "normal",
-              }}
-            >
-              sanagustinjayson.creatives@gmail.com
-            </button>
-            <div
-              className="flex flex-row justify-between"
-              style={{
-                fontFamily: "Helvetica",
-                fontWeight: "bold",
-                fontStyle: "normal",
-              }}
-            >
-              {socialLinks.map((link) => (
-                <a key={link.name} href={link.url} className="cursor-pointer">
-                  {link.name}
-                </a>
-              ))}
+        <div>
+          <div className="flex flex-col lg:flex-row justify-between items-center">
+            <div className="2xl:text-[180px] xl:text-[160px] kg:text-[140px] md:text-[120px] sm:text-[100px] text-[80px] order-2 lg:order-1">
+              ©2024
+            </div>
+            <div className="flex flex-col order-1 lg:order-2 text-responsiveNav gap-4 -mt-20">
+              <button
+                className=" border-[2px] border-solid rounded-full px-4 hover:bg-[#DB0102] hover:border-[#DB0102]"
+                style={{
+                  fontFamily: "Helvetica",
+                  fontWeight: "bold",
+                  fontStyle: "normal",
+                }}
+              >
+                sanagustinjayson.creatives@gmail.com
+              </button>
+              <div
+                className="flex flex-col lg:flex-row justify-between items-center"
+                style={{
+                  fontFamily: "Helvetica",
+                  fontWeight: "bold",
+                  fontStyle: "normal",
+                }}
+              >
+                {socialLinks.map((link) => (
+                  <a key={link.name} href={link.url} className="cursor-pointer">
+                    {link.name}
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
+          <div className="2xl:text-[180px] xl:text-[160px] kg:text-[140px] md:text-[120px] sm:text-[100px] text-[80px] -mt-10 flex flex-col lg:flex-row justify-center items-center">
+            <div>SANSAN</div>
+            <div className="hidden lg:block">.</div>
+            <div className="-mt-10 lg:-mt-0">GRAPHICS</div>
+          </div>
         </div>
-        <div className="text-[180px] -mt-24">SANSAN.GRAPHICS</div>
         <div
-          className="flex flex-row justify-between items-center text-responsiveNav"
+          className="flex flex-col lg:flex-row justify-between items-center text-responsiveNav"
           style={{
             fontFamily: "Helvetica",
             fontWeight: "normal",

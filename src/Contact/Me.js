@@ -4,7 +4,7 @@ function Me() {
   return (
     <>
       <div
-        className="text-responsiveBanner flex justify-between w-[1207px]"
+        className="text-responsiveBanner flex flex-col lg:flex-row justify-between lg:gap-56 max-w-[1207px] mb-40"
         style={{ fontFamily: "Anton, sans-serif" }}
       >
         <div>
@@ -24,7 +24,14 @@ function Me() {
           </span>
         </div>
         <div className="text-responsiveParagraph2 flex flex-col justify-center items-center">
-          <button className="flex flex-row justify-center items-center text-responsiveParagraph2 w-fit border-solid border-[2px] rounded-full mt-20 px-8 py-2 gap-4 hover:bg-[#DB0102] hover:border-[#DB0102]">
+          <button
+            className="flex flex-row justify-center items-center text-responsiveParagraph2 w-fit border-solid border-[2px] rounded-full mt-20 px-8 py-2 gap-4 hover:bg-[#DB0102] hover:border-[#DB0102]"
+            style={{
+              fontFamily: "Helvetica",
+              fontWeight: "bold",
+              fontStyle: "normal",
+            }}
+          >
             Contact
             <svg
               width="25"
@@ -43,6 +50,7 @@ function Me() {
           </button>
         </div>
       </div>
+      <div className="divider max-w-[1207px]" />
     </>
   );
 }

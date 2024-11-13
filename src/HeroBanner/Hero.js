@@ -22,9 +22,9 @@ function Hero() {
         </div>
         <div>HEY THERE! I’M SANSAN, A</div>
         <div className="flex flex-col justify-center items-center">
-          <button className="w-fit flex justify-center items-center gap-4 border-[#DB0102] border-solid bg-[#DB0102] hover:border-[#B0B0B0] hover:border-solid hover:bg-[#B0B0B0] text-[#1D1D1D] rounded-full px-10 hover:scale-105 transition-transform ease-in-out duration-300">
+          <button className="w-fit flex justify-center items-center gap-4 border-[#DB0102] border-solid bg-[#DB0102] hover:border-[#B0B0B0] hover:border-solid hover:bg-[white] hover:text-[#DB0102] text-[#1D1D1D] rounded-full px-10">
             GRAPHIC DESIGNER
-            <svg
+            {/* <svg
               className="-mt-8"
               width="32"
               height="32"
@@ -38,7 +38,7 @@ function Hero() {
                 stroke-width="8"
                 stroke-linecap="square"
               />
-            </svg>
+            </svg> */}
           </button>
         </div>
         <div
@@ -51,28 +51,27 @@ function Hero() {
         >
           Welcome to my creative space!
         </div>
-        <div className="flex flex-row justify-center items-center">
+        <div className="flex flex-col md:flex-row justify-center items-center">
           GOT A PROJECT IN MIND?
           <span>
             <div>
-              <button className="w-fit flex flex-row justify-center items-center gap-4 border-[#B0B0B0] border-solid bg-[#B0B0B0] hover:border-[#DB0102] hover:border-solid hover:bg-[#DB0102] text-[#1D1D1D] rounded-full px-10 ml-4 hover:scale-105 transition-transform ease-in-out duration-300">
+              <button className="w-fit flex flex-row justify-center items-center gap-4 border-[#B0B0B0] border-solid bg-[#B0B0B0] hover:border-[#DB0102] hover:border-solid hover:bg-[white] hover:text-[#B0B0B0] text-[#1D1D1D] rounded-full px-10 ml-4">
                 LET’S CHAT
-                <div className="-mt-8">
-                  <svg
-                    width="32"
-                    height="32"
-                    viewBox="0 0 42 42"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M6 36L38 4M38 4H6M38 4V36"
-                      stroke="#1E1E1E"
-                      stroke-width="8"
-                      stroke-linecap="square"
-                    />
-                  </svg>
-                </div>
+                {/* <svg
+                  className="-mt-8"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6 36L38 4M38 4H6M38 4V36"
+                    stroke="#1E1E1E"
+                    stroke-width="8"
+                    stroke-linecap="square"
+                  />
+                </svg> */}
               </button>
             </div>
           </span>
