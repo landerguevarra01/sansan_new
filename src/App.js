@@ -126,19 +126,22 @@ function App() {
           </div>
           <div
             id="projects"
-            className="flex flex-col justify-center items-center my-40 lg:my-0"
+            className="flex flex-col justify-center items-center my-20 lg:my-0"
           >
             <Featured />
           </div>
-          <div className="flex flex-col my-40">
+          <div className="flex flex-col my-20 lg:my-40">
             <MarqueeText />
           </div>
-          <div id="about" className="flex flex-col justify-center items-center">
+          <div
+            id="about"
+            className="flex flex-col justify-center items-center my-20 lg:my-0"
+          >
             <Remarks />
           </div>
           <div
             id="contact"
-            className="flex flex-col justify-center items-center my-40"
+            className="flex flex-col justify-center items-center my-20 lg:my-40"
           >
             <Me />
           </div>

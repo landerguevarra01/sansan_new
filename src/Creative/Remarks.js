@@ -11,7 +11,7 @@ function Remarks() {
     <>
       <div className="flex flex-col gap-4">
         <div
-          className="flex flex-col lg:flex-row gap-12 justify-center items-center text-responsiveBanner max-w-[1207px]"
+          className="flex flex-col lg:flex-row gap-12 justify-center items-center text-[30px] 2xl:text-[80px] xl:text-[70px] lg:text-[60px] md:text-[50px] sm:text-[40px] max-w-[1207px]"
           style={{ fontFamily: "Anton, sans-serif" }}
         >
           <div>
@@ -52,7 +52,7 @@ function Remarks() {
               }}
             >
               View More
-              <svg
+              {/* <svg
                 width="20"
                 height="20"
                 viewBox="0 0 25 25"
@@ -65,7 +65,7 @@ function Remarks() {
                   stroke-width="3"
                   stroke-linecap="square"
                 />
-              </svg>
+              </svg> */}
             </button>
           </div>
           <div>

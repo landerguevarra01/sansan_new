@@ -4,7 +4,7 @@ function Me() {
   return (
     <>
       <div
-        className="text-responsiveBanner flex flex-col lg:flex-row justify-between lg:gap-56 max-w-[1207px] mb-40"
+        className="text-[30px] 2xl:text-[80px] xl:text-[70px] lg:text-[60px] md:text-[50px] sm:text-[40px] flex flex-col lg:flex-row justify-between lg:gap-56 max-w-[1207px] mb-40"
         style={{ fontFamily: "Anton, sans-serif" }}
       >
         <div>
@@ -33,7 +33,7 @@ function Me() {
             }}
           >
             Contact
-            <svg
+            {/* <svg
               width="25"
               height="25"
               viewBox="0 0 25 25"
@@ -46,7 +46,7 @@ function Me() {
                 stroke-width="3"
                 stroke-linecap="square"
               />
-            </svg>
+            </svg> */}
           </button>
         </div>
       </div>

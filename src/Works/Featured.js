@@ -40,7 +40,7 @@ function Featured() {
 
   return (
     <div
-      className="text-responsiveBanner flex flex-col xl:w-[1207px] max-w-[1207px]"
+      className="text-[30px] 2xl:text-[80px] xl:text-[70px] lg:text-[60px] md:text-[50px] sm:text-[40px] flex flex-col xl:w-[1207px] max-w-[1207px]"
       style={{ fontFamily: "Anton, sans-serif" }}
     >
       <div>
