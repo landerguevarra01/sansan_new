@@ -84,7 +84,7 @@ function Featured() {
               {work.id}
             </div>
             <div>{work.title}</div>
-            <div className="absolute right-0 -mt-8">
+            <div className="hidden md:flex absolute right-0 -mt-8">
               <svg
                 width="42"
                 height="42"

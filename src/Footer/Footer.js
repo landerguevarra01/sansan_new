@@ -12,6 +12,15 @@ function Footer() {
       url: "https://www.instagram.com/sanagustinjayson.creatives/",
     },
   ];
+
+  // Get the current date
+  const currentDate = new Date();
+
+  // Format the date as MM/DD/YYYY
+  const formattedDate = `${
+    currentDate.getMonth() + 1
+  }/${currentDate.getDate()}/${currentDate.getFullYear()}`;
+
   return (
     <>
       <div
@@ -24,16 +33,25 @@ function Footer() {
               ©2024
             </div>
             <div className="flex flex-col order-1 lg:order-2 text-responsiveNav gap-4 -mt-20">
-              <button
-                className=" border-[2px] border-solid rounded-full px-4 hover:bg-[#DB0102] hover:border-[#DB0102]"
+              <a
+                href="mailto:sanagustinjayson.creatives@gmail.com"
                 style={{
-                  fontFamily: "Helvetica",
-                  fontWeight: "bold",
-                  fontStyle: "normal",
+                  display: "inline-block",
+                  textDecoration: "none",
                 }}
               >
-                sanagustinjayson.creatives@gmail.com
-              </button>
+                <button
+                  className="border-[2px] border-solid rounded-full px-4 hover:bg-[#DB0102] hover:border-[#DB0102]"
+                  style={{
+                    fontFamily: "Helvetica",
+                    fontWeight: "bold",
+                    fontStyle: "normal",
+                  }}
+                >
+                  sanagustinjayson.creatives@gmail.com
+                </button>
+              </a>
+
               <div
                 className="flex flex-col lg:flex-row justify-between items-center"
                 style={{
@@ -70,7 +88,7 @@ function Footer() {
           {
             // This is a single-line comment
           }
-          <div>LAST UPDATED: 11/12/2024</div>
+          <div>LAST UPDATED: {formattedDate}</div>
         </div>
       </div>
     </>
